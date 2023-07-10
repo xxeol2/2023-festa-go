@@ -33,3 +33,11 @@ jobs:
           labels: '[ "BE" ]'
           reviewers: '["BGuga", "seokjin8678", "xxeol2", "carsago"]'
           remove-when-no-label: "true"
+      - name: glen-label
+        id: glen-label
+        uses: buildsville/assign-reviewer-by-label@v1
+        with:
+          token: "${{ secrets.PR_LABEL_TOKEN }}"
+          labels: '[ "GLEN" ]'
+          reviewers: '["seokjin8678", "xxeol2"]'
+          remove-when-no-label: "true"
