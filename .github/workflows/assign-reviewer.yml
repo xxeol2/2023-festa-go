@@ -13,8 +13,5 @@ jobs:
         with:
           GITHUB_TOKEN: ${{ secrets.PR_LABEL_TOKEN }}
           addAssignees: false
-          reviewers: |
-            seokjin8678
-            xxeol2
-          includeLabels: |
-            GLEN
+          reviewers: [seokjin8678, xxeol2]
+          includeLabels: [GLEN]
