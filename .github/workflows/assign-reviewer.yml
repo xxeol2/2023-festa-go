@@ -10,6 +10,5 @@ jobs:
       - uses: wow-actions/auto-assign@v3
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          addAssignees: false
           reviewers: seokjin8678, xxeol2
           includeLabels: GLEN
